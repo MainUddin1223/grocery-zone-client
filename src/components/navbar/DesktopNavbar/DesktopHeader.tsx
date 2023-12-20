@@ -2,6 +2,7 @@
 import Styles from './DesktopNavbar.module.css';
 import Search from 'antd/es/input/Search';
 import { Button, Radio } from 'antd';
+import Link from 'next/link';
 
 const DesktopHeader = () => {
 	const handleSearch = (value: string) => {
@@ -11,7 +12,9 @@ const DesktopHeader = () => {
 		<div className={Styles.desktop_header_container}>
 			<div className={Styles.header}>
 				<div>
-					<h1>Grocery mart</h1>
+					<Link href="/">
+						<h1>Grocery mart</h1>
+					</Link>
 				</div>
 				<div style={{ width: '50%' }}>
 					<Search

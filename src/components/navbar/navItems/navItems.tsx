@@ -77,12 +77,6 @@ export const desktopNavItems = () => {
 			key: `/product/cleaning-item`,
 			style: { border: '1px solid var(--primary-color)' },
 		},
-		// {
-		// 	label: <Link href={`/${role}/profile`}>Profile</Link>,
-		// 	icon: <UserOutlined style={{ fontSize: '21px' }} />,
-		// 	key: `/${role}/profile`,
-		// 	style: { border: '1px solid var(--primary-color)' },
-		// },
 	];
 	return desktopSidebarItems;
 };

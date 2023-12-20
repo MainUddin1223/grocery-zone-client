@@ -2,7 +2,7 @@
 	--brand-color: linear-gradient(to right, #ff8f76, #edb4a7, #ff8f76);
 	--secondary-color: #edb4a7;
 	--primary-color: #edb4a7;
-	--accent-color: 'red';
+	--accent-color: #edb4a7;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -12,23 +12,35 @@ const DesktopNavbar = ({ children }: { children: ReactNode }) => {
 	return (
 		<div>
 			<Layout
-				style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}
+				style={{
+					minHeight: '100vh',
+					display: 'flex',
+					flexDirection: 'column',
+					overflow: 'hidden',
+				}}
 			>
 				<DesktopHeader />
 				<div style={{ display: 'flex' }}>
 					<Sider
 						collapsible
+						width={280}
 						collapsed={collapsed}
 						onCollapse={(value) => setCollapsed(value)}
 					>
-						<div className="demo-logo-vertical" />
+						<div />
+
 						<Menu
+							style={{ padding: '0 10px' }}
 							defaultSelectedKeys={['1']}
 							mode="inline"
 							items={desktopNavItems()}
 						/>
 					</Sider>
-					<Layout>{children}</Layout>
+					<Layout>
+						<div style={{ height: '89vh', overflowY: 'scroll' }}>
+							{children}
+						</div>
+					</Layout>
 				</div>
 			</Layout>
 		</div>

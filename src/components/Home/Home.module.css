@@ -1,0 +1,9 @@
+.container {
+	height: 45vh;
+	background-color: var(--accent-color);
+	display: flex;
+}
+.flex_item {
+	width: 65%;
+	position: relative;
+}

@@ -1,12 +1,13 @@
 'use client';
+import Home from '@/components/Home/Home';
 import DesktopNavbar from '@/components/navbar/DesktopNavbar/DesktopNavbar';
-import { Button } from 'antd';
+import React from 'react';
 
 const page = () => {
 	return (
 		<div>
 			<DesktopNavbar>
-				<h1>Home</h1>
+				<Home />
 			</DesktopNavbar>
 		</div>
 	);
