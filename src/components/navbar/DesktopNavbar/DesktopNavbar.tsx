@@ -1,6 +1,6 @@
 'use client';
 import { ReactNode, useState } from 'react';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import { Breadcrumb, Button, Layout, Menu, theme } from 'antd';
 import { desktopNavItems } from '../navItems/navItems';
 const { Header, Content, Sider } = Layout;
 import Styles from './DesktopNavbar.module.css';
@@ -8,9 +8,7 @@ import DesktopHeader from './DesktopHeader';
 
 const DesktopNavbar = ({ children }: { children: ReactNode }) => {
 	const [collapsed, setCollapsed] = useState(false);
-	const {
-		token: { colorBgContainer, borderRadiusLG },
-	} = theme.useToken();
+
 	return (
 		<div>
 			<Layout
@@ -30,8 +28,7 @@ const DesktopNavbar = ({ children }: { children: ReactNode }) => {
 							items={desktopNavItems()}
 						/>
 					</Sider>
-					<Layout></Layout>
-					{children}
+					<Layout>{children}</Layout>
 				</div>
 			</Layout>
 		</div>

@@ -1,12 +1,15 @@
-import Image from 'next/image';
-import styles from './page.module.css';
+'use client';
 import DesktopNavbar from '@/components/navbar/DesktopNavbar/DesktopNavbar';
-import { ConfigProvider } from 'antd';
+import { Button } from 'antd';
 
-export default function Home() {
+const page = () => {
 	return (
 		<div>
-			<h1>hello</h1>
+			<DesktopNavbar>
+				<h1>Home</h1>
+			</DesktopNavbar>
 		</div>
 	);
-}
+};
+
+export default page;

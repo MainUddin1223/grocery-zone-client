@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import DesktopNavbar from '@/components/navbar/DesktopNavbar/DesktopNavbar';
 import { ConfigProvider } from 'antd';
+import Providers from '@/lib/Providers';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,21 +18,25 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<ConfigProvider
-			theme={{
-				components: {
-					Layout: {
-						siderBg: 'white',
-						triggerBg: 'var(--brand-color)',
+		<Providers>
+			<ConfigProvider
+				theme={{
+					components: {
+						Layout: {
+							siderBg: 'white',
+							triggerBg: 'var(--brand-color)',
+						},
 					},
-				},
-				token: {
-					colorPrimary: '#ff686e',
-					borderRadius: 3,
-				},
-			}}
-		>
-			<DesktopNavbar>{children}</DesktopNavbar>
-		</ConfigProvider>
+					token: {
+						colorPrimary: '#ff686e',
+						borderRadius: 3,
+					},
+				}}
+			>
+				<html lang="en">
+					<body className={inter.className}>{children}</body>
+				</html>
+			</ConfigProvider>
+		</Providers>
 	);
 }
