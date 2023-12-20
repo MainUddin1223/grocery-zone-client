@@ -37,7 +37,7 @@ const DesktopNavbar = ({ children }: { children: ReactNode }) => {
 						/>
 					</Sider>
 					<Layout>
-						<div style={{ height: '89vh', overflowY: 'scroll' }}>
+						<div style={{ height: '86vh', overflowY: 'scroll' }}>
 							{children}
 						</div>
 					</Layout>
