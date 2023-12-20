@@ -1,4 +1,4 @@
-import React from 'react';
+'use client';
 import Styles from './DesktopNavbar.module.css';
 import Search from 'antd/es/input/Search';
 import { Button, Radio } from 'antd';

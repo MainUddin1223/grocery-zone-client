@@ -20,61 +20,61 @@ import Image from 'next/image';
 export const desktopNavItems = () => {
 	const desktopSidebarItems: MenuProps['items'] = [
 		{
-			label: <Link href={`/`}>Hot sales</Link>,
+			label: <Link href={`/product/hot-sales`}>Hot sales</Link>,
 			icon: <Image src={hot_offer} alt="hot_offer" width={20} height={20} />,
-			key: `/`,
+			key: `/product/hot-sales`,
 			style: { border: '1px solid var(--primary-color)' },
 		},
 		{
-			label: <Link href={`/`}>Dhamaka offer</Link>,
+			label: <Link href={`/product/dhamaka-offer`}>Dhamaka offer</Link>,
 			icon: (
 				<Image src={dhamaka_offer} alt="hot_offer" width={20} height={20} />
 			),
-			key: `/`,
+			key: `/product/dhamaka-offer`,
 			style: { border: '1px solid var(--primary-color)' },
 		},
 		{
-			label: <Link href={`/`}>Grocery items</Link>,
+			label: <Link href={`/product/grocery-items`}>Grocery items</Link>,
 			icon: <Image src={grocery} alt="hot_offer" width={20} height={20} />,
-			key: `/`,
+			key: `/product/grocery-items`,
 			style: { border: '1px solid var(--primary-color)' },
 		},
 		{
-			label: <Link href={`/`}>Fresh vegetables</Link>,
+			label: <Link href={`/product/fresh-vegetables`}>Fresh vegetables</Link>,
 			icon: <Image src={vegetables} alt="hot_offer" width={20} height={20} />,
-			key: `/`,
+			key: `/product/fresh-vegetables`,
 			style: { border: '1px solid var(--primary-color)' },
 		},
 		{
-			label: <Link href={`/`}>Fresh meat & fish</Link>,
+			label: <Link href={`/product/meat&fish`}>Fresh meat & fish</Link>,
 			icon: <Image src={meat} alt="hot_offer" width={20} height={20} />,
-			key: `/`,
+			key: `/product/meat&fish`,
 			style: { border: '1px solid var(--primary-color)' },
 		},
 		{
-			label: <Link href={`/`}>Premium items</Link>,
+			label: <Link href={`/product/premium-item`}>Premium items</Link>,
 			icon: <Image src={premium} alt="hot_offer" width={20} height={20} />,
-			key: `/`,
+			key: `/product/premium-item`,
 			style: { border: '1px solid var(--primary-color)' },
 		},
 		{
-			label: <Link href={`/`}>Personal care</Link>,
+			label: <Link href={`/product/personal-care`}>Personal care</Link>,
 			icon: (
 				<Image src={personal_care} alt="hot_offer" width={20} height={20} />
 			),
-			key: `/`,
+			key: `/product/personal-care`,
 			style: { border: '1px solid var(--primary-color)' },
 		},
 		{
-			label: <Link href={`/`}>Skin care</Link>,
+			label: <Link href={`/product/skin-care`}>Skin care</Link>,
 			icon: <Image src={skin_care} alt="hot_offer" width={20} height={20} />,
-			key: `/`,
+			key: `/product/skin-care`,
 			style: { border: '1px solid var(--primary-color)' },
 		},
 		{
-			label: <Link href={`/`}>Cleaning items</Link>,
+			label: <Link href={`/product/cleaning-items`}>Cleaning items</Link>,
 			icon: <Image src={cleaning} alt="hot_offer" width={20} height={20} />,
-			key: `/`,
+			key: `/product/cleaning-item`,
 			style: { border: '1px solid var(--primary-color)' },
 		},
 		// {

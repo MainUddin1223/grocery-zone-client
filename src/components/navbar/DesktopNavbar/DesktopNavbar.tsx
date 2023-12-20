@@ -1,12 +1,12 @@
 'use client';
-import { useState } from 'react';
+import { ReactNode, useState } from 'react';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import { desktopNavItems } from '../navItems/navItems';
 const { Header, Content, Sider } = Layout;
 import Styles from './DesktopNavbar.module.css';
 import DesktopHeader from './DesktopHeader';
 
-const DesktopNavbar = () => {
+const DesktopNavbar = ({ children }: { children: ReactNode }) => {
 	const [collapsed, setCollapsed] = useState(false);
 	const {
 		token: { colorBgContainer, borderRadiusLG },
@@ -30,25 +30,8 @@ const DesktopNavbar = () => {
 							items={desktopNavItems()}
 						/>
 					</Sider>
-					<Layout>
-						<Header style={{ padding: 0, background: colorBgContainer }} />
-						<Content style={{ margin: '0 16px' }}>
-							<Breadcrumb style={{ margin: '16px 0' }}>
-								<Breadcrumb.Item>User</Breadcrumb.Item>
-								<Breadcrumb.Item>Bill</Breadcrumb.Item>
-							</Breadcrumb>
-							<div
-								style={{
-									padding: 24,
-									minHeight: 360,
-									backgroundColor: 'var(--brand-color)',
-									borderRadius: borderRadiusLG,
-								}}
-							>
-								Bill is a cat.
-							</div>
-						</Content>
-					</Layout>
+					<Layout></Layout>
+					{children}
 				</div>
 			</Layout>
 		</div>

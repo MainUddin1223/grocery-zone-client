@@ -5,21 +5,8 @@ import { ConfigProvider } from 'antd';
 
 export default function Home() {
 	return (
-		<ConfigProvider
-			theme={{
-				components: {
-					Layout: {
-						siderBg: 'white',
-						triggerBg: 'var(--brand-color)',
-					},
-				},
-				token: {
-					colorPrimary: '#ff686e',
-					borderRadius: 3,
-				},
-			}}
-		>
-			<DesktopNavbar />
-		</ConfigProvider>
+		<div>
+			<h1>hello</h1>
+		</div>
 	);
 }
