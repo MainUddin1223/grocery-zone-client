@@ -1,0 +1,23 @@
+.container {
+	margin: 25px 5%;
+}
+.category_container {
+	display: flex;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+.category_item {
+	padding: 30px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	border-radius: 3px;
+	max-width: 180px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.category_item:hover {
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
