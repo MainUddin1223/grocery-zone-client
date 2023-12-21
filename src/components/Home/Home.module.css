@@ -8,3 +8,16 @@
 	width: 65%;
 	position: relative;
 }
+.tag_container {
+	margin: 25px 0;
+}
+.tag_item {
+	width: 75%;
+	display: flex;
+	gap: 35px;
+	align-items: center;
+	margin: 10px auto;
+	padding: 10px 40px;
+	border-radius: 3px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}

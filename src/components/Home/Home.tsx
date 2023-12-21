@@ -8,6 +8,7 @@ import broccoli from '@/assets/broccoli.png';
 import cover from '@/assets/cover.png';
 import Image from 'next/image';
 import save_money from '@/assets/save-money.png';
+import { Col, Row } from 'antd';
 const Home = () => {
 	return (
 		<div className={Styles.container}>
@@ -103,11 +104,33 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
-			<div>
-				<div>
-					<Image src={save_money} alt="save_money" width={50} height={50} />
-					<p>Save money</p>
-				</div>
+			<div className={Styles.tag_container}>
+				<Row>
+					<Col md={12}>
+						<div className={Styles.tag_item}>
+							<Image src={save_money} alt="save_money" width={30} height={30} />
+							<p>Get exclusive offer & save money</p>
+						</div>
+					</Col>
+					<Col md={12}>
+						<div className={Styles.tag_item}>
+							<Image src={save_money} alt="save_money" width={30} height={30} />
+							<p>Get exclusive offer & save money</p>
+						</div>
+					</Col>
+					<Col md={12}>
+						<div className={Styles.tag_item}>
+							<Image src={save_money} alt="save_money" width={30} height={30} />
+							<p>Get exclusive offer & save money</p>
+						</div>
+					</Col>
+					<Col md={12}>
+						<div className={Styles.tag_item}>
+							<Image src={save_money} alt="save_money" width={30} height={30} />
+							<p>Get exclusive offer & save money</p>
+						</div>
+					</Col>
+				</Row>
 			</div>
 		</div>
 	);
