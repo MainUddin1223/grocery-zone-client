@@ -16,6 +16,7 @@ import premium from '@/assets/premium.png';
 import personal_care from '@/assets/personal--care.png';
 import skin_care from '@/assets/skin-care.png';
 import cleaning from '@/assets/cleaning.png';
+import fruits from '@/assets/fruits-svgrepo-com.png';
 import Image from 'next/image';
 export const desktopNavItems = () => {
 	const desktopSidebarItems: MenuProps['items'] = [
@@ -43,6 +44,12 @@ export const desktopNavItems = () => {
 			label: <Link href={`/product/fresh-vegetables`}>Fresh vegetables</Link>,
 			icon: <Image src={vegetables} alt="hot_offer" width={20} height={20} />,
 			key: `/product/fresh-vegetables`,
+			style: { border: '1px solid var(--primary-color)' },
+		},
+		{
+			label: <Link href={`/product/fruits`}>Fresh Fruits</Link>,
+			icon: <Image src={fruits} alt="hot_offer" width={20} height={20} />,
+			key: `/product/fruits`,
 			style: { border: '1px solid var(--primary-color)' },
 		},
 		{

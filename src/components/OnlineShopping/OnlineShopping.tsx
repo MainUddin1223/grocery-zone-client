@@ -4,6 +4,7 @@ import meat from '@/assets/meat.png';
 import personal_care from '@/assets/personal--care.png';
 import skin_care from '@/assets/skin-care.png';
 import cleaning from '@/assets/cleaning.png';
+import fruits from '@/assets/fruits-svgrepo-com.png';
 import Image from 'next/image';
 import Styles from './OnlineShopping.module.css';
 const OnlineShopping = () => {
@@ -25,6 +26,10 @@ const OnlineShopping = () => {
 					<div className={Styles.category_item}>
 						<Image src={vegetables} height={100} width={100} alt="vegetables" />
 						<p>Vegetables</p>
+					</div>
+					<div className={Styles.category_item}>
+						<Image src={fruits} height={100} width={100} alt="vegetables" />
+						<p>Fresh fruits</p>
 					</div>
 					<div className={Styles.category_item}>
 						<Image src={meat} height={100} width={100} alt="grocery" />
