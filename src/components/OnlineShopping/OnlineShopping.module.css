@@ -1,8 +1,26 @@
 .container {
 	margin: 25px 5%;
+	text-align: center;
 }
-.category_container {
+.order_container {
+	margin: 25px 0;
+}
+.order_container h1 {
+	margin: 25px 0;
+}
+.order_container p {
+	font-size: 17px;
+}
+.delivery_img {
+	width: 75%;
+	margin: 25px auto;
+}
+.category_container h1 {
+	margin: 25px 0;
+}
+.category_items {
 	display: flex;
+	justify-content: center;
 	gap: 30px;
 	flex-wrap: wrap;
 }

@@ -7,18 +7,30 @@ import cleaning from '@/assets/cleaning.png';
 import fruits from '@/assets/fruits-svgrepo-com.png';
 import Image from 'next/image';
 import Styles from './OnlineShopping.module.css';
+import order_img from '@/assets/delivery.jpg';
 const OnlineShopping = () => {
 	return (
 		<div className={Styles.container}>
-			<h1>Order Now !</h1>
-			<p>
-				Save your valuable time and make your grocery shopping supper easy.We
-				will deliver your ordered item within our time slot. You can choose your
-				preferable time slot
-			</p>
-			<div>
+			<div className={Styles.order_container}>
+				<h1>Order Now !</h1>
+				<p>
+					Save your valuable time and make your grocery shopping supper easy. We
+					will deliver your ordered item within our time slot. You can choose
+					your preferable time slot
+				</p>
+
+				<div className={Styles.delivery_img}>
+					<Image
+						src={order_img}
+						alt="order_img"
+						width={100}
+						layout="responsive"
+					/>
+				</div>
+			</div>
+			<div className={Styles.category_container}>
 				<h1>Popular Category</h1>
-				<div className={Styles.category_container}>
+				<div className={Styles.category_items}>
 					<div className={Styles.category_item}>
 						<Image src={grocery} height={100} width={100} alt="grocery" />
 						<p>Grocery</p>
