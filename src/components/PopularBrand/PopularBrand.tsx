@@ -1,17 +1,12 @@
 import { brands } from '@/utils/brand';
 import Image from 'next/image';
+import Styles from './PopulerBrand.module.css'
 
 const PopularBrand = () => {
 	return (
-		<div>
+		<div className={Styles.container}>
 			<h1>Popular on Grocery Mart</h1>
-			<div
-				style={{
-					display: 'flex',
-					justifyContent: 'center',
-					alignItems: 'center',
-					gap: '15px',
-				}}
+			<div className={Styles.brand_container}
 			>
 				{brands.map((brand) => (
 					<div key={brand.id}>

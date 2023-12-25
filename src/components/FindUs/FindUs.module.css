@@ -1,0 +1,13 @@
+.container {
+	margin: 25px 5%;
+}
+.find_us_heading {
+	text-align: center;
+	margin: 25px 0;
+}
+.find_us_heading h1 {
+	margin: 15px;
+}
+.find_us_heading p {
+	font-size: 17px;
+}

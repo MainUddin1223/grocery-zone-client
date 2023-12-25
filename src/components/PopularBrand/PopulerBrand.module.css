@@ -1,0 +1,13 @@
+.container {
+	margin: 50px 0;
+}
+.container h1 {
+	text-align: center;
+	margin: 25px 0;
+}
+.brand_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}

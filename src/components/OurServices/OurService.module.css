@@ -1,0 +1,11 @@
+.container {
+	margin: 50px 5%;
+}
+.service_header {
+	text-align: center;
+	margin: 25px;
+}
+.service_item {
+	text-align: center;
+	min-height: 350px;
+}
